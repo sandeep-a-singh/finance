@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  credit:
+    image: credit:latest
+    restart: always
+    ports:
+    - 8081:8081
+
+  debit:
+    image: debit:latest
+    restart: always
+    ports:
+      - 8082:8082
