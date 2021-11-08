@@ -1,5 +1,8 @@
 apply plugin: 'org.springframework.boot'
 
+tasks.bootJar {enabled = false}
+
+
 dependencies {
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'
 }
