@@ -23,3 +23,20 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew build
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: sunny080593
+          password: 843066303
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          context: ./debit
+          file: ./Dockerfile
+          push: true
+          tags: sunny080593/debit:latest
