@@ -5,6 +5,9 @@ name: Build App
 
 on:
   push:
+    braches: '**'
+  workflow_dispatch:
+    braches: '**'
 
 jobs:
   build:
