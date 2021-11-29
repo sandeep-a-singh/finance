@@ -1,3 +1,6 @@
+name: Release App
+
+
 on:
   push:
     branches: 'master'
