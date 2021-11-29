@@ -38,7 +38,7 @@ jobs:
           context: ./
           file: ./credit/Dockerfile
           push: true
-          tags: sunny080593/credit
+          tags: sunny080593/credit:latest
 
       - name: AWS ECR push
         uses: docker://ghcr.io/kciter/aws-ecr-action:latest
