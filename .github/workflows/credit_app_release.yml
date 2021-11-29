@@ -36,6 +36,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          file: ./debit/Dockerfile
+          file: ./credit/Dockerfile
           push: true
-          tags: sunny080593/debit:latest
+          tags: sunny080593/credit:latest
