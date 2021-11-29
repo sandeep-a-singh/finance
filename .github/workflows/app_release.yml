@@ -48,6 +48,6 @@ jobs:
           account_id: ${{ secrets.AWS_ACCOUNT_ID }}
           repo: credit
           region: us-east-1
-          tags: latest,${{ github.sha }}
+          tags: ${{ github.sha }}
           create_repo: true
           image_scanning_configuration: true
